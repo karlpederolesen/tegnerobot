@@ -1,3 +1,22 @@
-basic.forever(function () {
-	
+input.onButtonPressed(Button.A, function () {
+    RingbitCar.running_distance(RingbitCar.Direction_run.forward, 200)
+    RingbitCar.freestyle(100, 0)
+    basic.pause(700)
+    RingbitCar.brake()
+    RingbitCar.running_distance(RingbitCar.Direction_run.forward, 200)
+    RingbitCar.freestyle(100, 0)
+    basic.pause(700)
+    RingbitCar.brake()
+    RingbitCar.running_distance(RingbitCar.Direction_run.forward, 200)
+    RingbitCar.freestyle(100, 0)
+    basic.pause(700)
+    RingbitCar.brake()
+    RingbitCar.running_distance(RingbitCar.Direction_run.forward, 200)
+    RingbitCar.freestyle(100, 0)
+    basic.pause(700)
+    RingbitCar.brake()
 })
+input.onButtonPressed(Button.B, function () {
+    RingbitCar.brake()
+})
+RingbitCar.init_wheel(AnalogPin.P1, AnalogPin.P2)
